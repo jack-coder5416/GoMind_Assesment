@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+</head>
+<body>
+    {% if not success %}
+    <h1>Student Form</h1>
+    <form method="POST" action="{{ url_for('index') }}">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br><br>
+        <label for="college">College:</label>
+        <input type="text" name="college" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% endif %}
+</body>
+</html>
